@@ -17,6 +17,7 @@ spec:
       labels:
         app: todoapp
     spec:
+      # ServiceAccount configured for RBAC secrets reader access
       serviceAccountName: secrets-reader
       containers:
       - name: todoapp

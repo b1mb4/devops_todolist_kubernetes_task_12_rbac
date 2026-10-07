@@ -9,7 +9,7 @@ This document describes how to validate the RBAC configuration and verify that t
 Ensure the Kubernetes cluster is running and apply the RBAC resources and the deployment:
 
 ```bash
-kubectl apply -f security/rbac.yaml
+kubectl apply -f security/rbac
 kubectl apply -f .infrastructure/app/deployment.yml
 ```
 
@@ -87,3 +87,9 @@ A JSON response containing the list of secrets in the `todoapp` namespace:
   ]
 }
 ```
+
+---
+
+## 5. Screenshot of Validation Output
+
+![SecretList Output](screenshot.png)
